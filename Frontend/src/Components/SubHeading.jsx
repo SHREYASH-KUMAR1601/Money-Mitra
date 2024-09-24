@@ -8,4 +8,4 @@ function SubHeading({label}) {
   )
 }
 
-export default SubHeading
+export default SubHeading;

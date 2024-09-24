@@ -1,10 +1,11 @@
 import React from 'react'
-import Heading from '../Components/Heading'
-import InputBox from '../Components/InputBox'
-import SubHeading from '../Components/SubHeading'
-import Button from '../Components/Button'
 import { useNavigate } from 'react-router-dom'
-import BottomWarning from '../Components/BottomWarning'
+import BottomWarning from '../Components/BottomWarning';
+import { Button } from '../Components/Button';
+import InputBox from '../Components/InputBox';
+import SubHeading from '../Components/SubHeading';
+import Heading from '../Components/Heading';
+
 
 function Signup() {
     const navigate = useNavigate();
@@ -23,10 +24,10 @@ function Signup() {
             navigate("/dashboard");
           }}/>
         </div>
-        <BottomWarning label={"Already have an account?"} buttonText={"Sign in"} to={"/sign-in"} />
+        <BottomWarning label={"Already have an account?"} buttonText={"Sign in"} to={"/signin"} />
       </div>
     </div>
   </div>
     )
 }
-export default Signup
+export default Signup;
